@@ -2,17 +2,17 @@
 
 Quotable MCP — wraps Quotable API (free, no auth)
 
-Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_quotes` | Search quotes by keyword. Returns matching quotes with author and tags. |
+| `search_quotes` | Search quotes by keyword or phrase. Returns matching quotes with author names and topic tags. |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
@@ -24,11 +24,32 @@ Add to your MCP client config:
 }
 ```
 
-Or use the CLI:
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx pipeworx use quotable
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Quotable data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
