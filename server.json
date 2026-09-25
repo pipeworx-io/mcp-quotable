@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/quotable",
   "title": "Quotable",
-  "description": "Quotable MCP \u2014 wraps Quotable API (free, no auth)",
-  "version": "0.1.0",
+  "description": "Quotable MCP — wraps the Quotable dataset (free, no auth)",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/quotable",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-quotable",
