@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-quotable",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Quotable MCP — wraps the Quotable dataset (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-quotable": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "quotable"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-quotable.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/quotable",
   "pipeworx": {
-    "sourceHash": "v1-94149be56ac572d701d8e6c23e5187011c98c9bc4846bf916dcaa22a1b016a3b",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "quotable",
+    "gatewaySlug": "quotable",
+    "sourceHash": "v1-4c60711346f383d6d141f955ac953edfb0358b8ef22300c9d6568f187af2e7ed",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
