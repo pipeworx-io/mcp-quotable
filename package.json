@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-quotable",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Quotable MCP — wraps the Quotable dataset (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "quotable",
     "gatewaySlug": "quotable",
-    "sourceHash": "v1-4c60711346f383d6d141f955ac953edfb0358b8ef22300c9d6568f187af2e7ed",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-f2247ba120f0ad673d09230ef4179a9e3a8750af3f8089c46793897de5cb610b",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
