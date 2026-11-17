@@ -1,17 +1,17 @@
 # mcp-quotable
 
-Quotable MCP — wraps the Quotable dataset (free, no auth)
+Unofficial Quotable MCP — wraps the Quotable dataset (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2007+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `random_quote` | Get a random quote, optionally filtered by tag (e.g., "Wisdom", "Motivational") or author slug. Returns quote text, author, and tags. Tags come from a fixed list — call list_tags to see it. |
-| `search_quotes` | Search quotes by keyword or phrase. Returns matching quotes with author names and topic tags. |
+| `quotable_random_quote` | Get a random quote, optionally filtered by tag (e.g., "Wisdom", "Motivational") or author slug. Returns quote text, author, and tags. Tags come from a fixed list — call list_tags to see it. |
+| `quotable_search_quotes` | Search quotes by keyword or phrase. Returns matching quotes with author names and topic tags. |
 | `get_authors` | Look up an author by slug (e.g., "albert-einstein"). Returns bio, description, and total quote count. Without a slug, returns a page of the author list — the upstream list is unordered and cannot be searched, so prefer passing a slug. |
-| `list_tags` | Browse all available quote tags sorted by popularity. Use returned tags with random_quote to filter by topic. |
+| `quotable_list_tags` | Browse all available quote tags sorted by popularity. Use returned tags with random_quote to filter by topic. |
 
 ## Quick Start
 
@@ -57,7 +57,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1866+ data sources. The
+Both URLs reach the same gateway and the same 2007+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
